@@ -4,18 +4,18 @@ import Add
 
 print("Ticket System")
 print("What would you like to do?")
-print("1. View Movies") #view
-print("2. Order ticket") #add
+print("1. Order tickets") #add
+print("2. View purchased tickets") #view
 print("3. Update current tickets") #update
 
 
 print("Input choice here")
 choice = input()
 
-if choice == "1": #view
-    print()
-elif choice == "2": #add
+if choice == "1": #add
     Add.buy()
+elif choice == "2": #view
+    print()
 elif choice == "3": #update
     print()
 else:
