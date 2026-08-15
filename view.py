@@ -2,4 +2,7 @@ movies = (
     ("Spider-Man: Brand New Day", 285, "July 29,2026"),
     ("The Odyssey", 250, "July 15,2026"),
     ("Blue Lock (Live Action)", 255, "August 07,2026"),
-)git
+)
+
+print ("============TICKET INFORMATION============")
+
