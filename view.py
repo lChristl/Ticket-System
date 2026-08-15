@@ -6,3 +6,7 @@ movies = (
 
 print ("============TICKET INFORMATION============")
 
+for movie, price, date:
+    print(f"Movie: {movie}")
+    print(f"Price: {price}")
+    print(f"Date: {date}")
