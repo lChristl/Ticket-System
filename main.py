@@ -9,6 +9,6 @@ print("Movie 2:");
 print("Movie 3: ");
 
 
-add()
-view()
-update()
+# add()
+# view()
+# update()
