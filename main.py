@@ -1,14 +1,26 @@
-import add
-import view
-import update
+#import add
+#import view
+#import update
 
 print("Ticket System");
-print("Now Showing");
-print("Movie 1: ");
-print("Movie 2:");
-print("Movie 3: ");
+print("What would you like to do?");
+print("1. View Movies"); #view
+print("2. Order ticket"); #add
+print("3. Update current tickets"); #update
 
 
-# add()
+print("Input choice here");
+choice = input();
+
+if choice == "1":
+    print();
+elif choice == "2":
+    print();
+elif choice == "3":
+    print();
+else:
+    print("Input only numbers [1]-[3]");
+
 # view()
+# add()
 # update()
