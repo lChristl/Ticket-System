@@ -9,8 +9,16 @@ BOOKINGS = {
         "quantity":"2",
         "total": 200,
         "times_available": ("1:10PM","5:10PM","7:10PM")
-    }
-            
+    },
+
+    "2":{
+            "title":"Testing movie 2",
+            "price":100,
+            "time":"12:00PM",
+            "quantity":"2",
+            "total": 200,
+            "times_available": ("1:10PM","5:10PM","7:10PM")
+        }
 
             }
 
@@ -33,12 +41,20 @@ def modify_booking():
 
     option = input("Choose an option: ")
 
-    if option == "1":
+    if option == "1": #Change showtime
         print("Available Showtimes: ")
         for index, time in enumerate(booking["times_available"], 1):
             print(f"{index}. {time}")
 
         t_choice = int(input("Select new showtime number: "))
+        if 1 <= t_choice <= len(booking["times_available"]):
+            booking["time"] = booking["times_available"][t_choice - 1]
+            print(f"Showtime updated to {booking["time"]}")
+        else: 
+            print("Invalid choice")
+        
+
+
 
 modify_booking()
     
