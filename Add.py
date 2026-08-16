@@ -49,5 +49,15 @@ def buy():
     quantity = int(input("Number of Ticket: "))
     total = price * quantity
 
+    ticket = {
+        "movie": movie,
+        "showtime": showtime,
+        "date": date,
+        "quantity": quantity,
+        "total": total,
+    }
+    tickets.append(ticket)
+    
     print(f"Total: P{total}")
     print(f"Time: {showtime}")
+    print("Ticket purchased successfully!") 
