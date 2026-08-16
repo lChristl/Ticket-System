@@ -6,6 +6,7 @@ def buy():
     print("1. Spider-Man:Brand New Day : P285 : July 31, 2026")
     print("2. The Odyssey  : P255 : July 15, 2026")
     print("3. Blue-Lock Live Action : P250 : August 07, 2026")
+    print()
 
     choice = int(input("Movie (Enter a number): "))
     if choice == 1:
@@ -33,7 +34,9 @@ def buy():
         print("3. 9:00PM")
     else:
         print("Invalid!!")
+        return()
 
+    print()
     showtime_choice = int(input("Time (Enter a Number): "))
     if showtime_choice == 1:
         showtime = time[0]
@@ -45,7 +48,9 @@ def buy():
         showtime = time[2]
     else:
         print("Invalid!!")
+        return()
 
+    print()
     quantity = int(input("Number of Ticket: "))
     total = price * quantity
 
@@ -58,6 +63,8 @@ def buy():
     }
     tickets.append(ticket)
     
+    print()
     print(f"Total: P{total}")
     print(f"Time: {showtime}")
-    print("Ticket purchased successfully!") 
+    print("Ticket purchased successfully!")
+    print() 

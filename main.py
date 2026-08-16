@@ -10,9 +10,8 @@ def main():
         print("3. Update") #update
         print("4. Exit\n")
 
-        print("Input choice here [1-4]")
-        choice = input()
-
+        choice = input("Input choice here [1-4]: ")
+        print()
         if choice == "1": #add
             Add.buy()
         elif choice == "2": #view
