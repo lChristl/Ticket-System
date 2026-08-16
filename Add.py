@@ -1,4 +1,4 @@
-from data import movies
+from data import movies, tickets
 
 def buy():
     print("====Buy Ticket====")
