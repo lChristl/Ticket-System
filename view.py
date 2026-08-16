@@ -1,12 +1,16 @@
-movies = (
-    ("Spider-Man: Brand New Day", 285, "July 29,2026"),
-    ("The Odyssey", 250, "July 15,2026"),
-    ("Blue Lock (Live Action)", 255, "August 07,2026"),
-)
+from data import tickets
 
-print ("============TICKET INFORMATION============")
+def view_tickets():
+    print("===== VIEW PURCHASED TICKET =====")
 
-for movie, price, date;
-    print(f"Movie: {movie}")
-    print(f"Price: {price}")
-    print(f"Showing Date: {date}")
+    if not tickets:
+        print("No tickets purchased yet.\n")
+
+for index, ticket in enumerate(tickets, start=1):
+    print(f"Ticket: {index}")
+    print(f" Movie: {ticket['movie']}")
+    print(f" Date: {ticket['date']}")
+    print(f" Time: {ticket['showtime']}")
+    print(f" Quantity: {ticket['quantity']}")
+    print(f" Total: P{ticket['total']}")
+    print ("-" * 20)
