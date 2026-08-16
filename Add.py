@@ -35,6 +35,7 @@ def buy():
     else:
         print("Invalid!!")
 
+    print()
     showtime_choice = int(input("Time (Enter a Number): "))
     if showtime_choice == 1:
         showtime = time[0]
@@ -60,6 +61,8 @@ def buy():
     }
     tickets.append(ticket)
     
+    print()
     print(f"Total: P{total}")
     print(f"Time: {showtime}")
-    print("Ticket purchased successfully!") 
+    print("Ticket purchased successfully!")
+    print() 
