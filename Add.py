@@ -6,6 +6,7 @@ def buy():
     print("1. Spider-Man:Brand New Day : P285 : July 31, 2026")
     print("2. The Odyssey  : P255 : July 15, 2026")
     print("3. Blue-Lock Live Action : P250 : August 07, 2026")
+    print()
 
     choice = int(input("Movie (Enter a number): "))
     if choice == 1:
@@ -46,6 +47,7 @@ def buy():
     else:
         print("Invalid!!")
 
+    print()
     quantity = int(input("Number of Ticket: "))
     total = price * quantity
 
