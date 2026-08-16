@@ -34,6 +34,7 @@ def buy():
         print("3. 9:00PM")
     else:
         print("Invalid!!")
+        return()
 
     print()
     showtime_choice = int(input("Time (Enter a Number): "))
@@ -47,6 +48,7 @@ def buy():
         showtime = time[2]
     else:
         print("Invalid!!")
+        return()
 
     print()
     quantity = int(input("Number of Ticket: "))
