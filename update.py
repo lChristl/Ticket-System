@@ -52,8 +52,15 @@ def modify_booking():
             print(f"Showtime updated to {booking["time"]}")
         else: 
             print("Invalid choice")
-        
 
+    elif option == "2": #Change ticket qty
+        new_qty = int(input("Enter new quantity: "))
+        if new_qty > 0:
+            booking["quantity"] = new_qty
+            booking["total"] = booking["price"] * new_qty
+            print(f"Quantity updated. New Total: P{booking["total"]}")
+        else:
+            print("Quantity must be greater than 0.")
 
 
 modify_booking()
