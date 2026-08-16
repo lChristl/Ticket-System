@@ -2,24 +2,31 @@ import Add
 import view
 #import update
 
-print("Ticket System")
-print("What would you like to do?")
-print("1. Order tickets") #add
-print("2. View purchased tickets") #view
-print("3. Update current tickets") #update
+def main():
+    while True:
+        print("==== CINEMA TICKETING SYSTEM ====")
+        print("1. Order Ticket ") #add
+        print("2. View Tickets") #view
+        print("3. Update") #update
+        print("4. Exit\n")
 
+        print("Input choice here [1-4]")
+        choice = input()
 
-print("Input choice here")
-choice = input()
+        if choice == "1": #add
+            Add.buy()
+        elif choice == "2": #view
+            view.view_tickets()
+        elif choice == "3": #update
+            print()
+        elif choice == "4": #exit
+            print("Exiting program..")
+            break
+        else:
+            print("Input only numbers [1]-[4]\n")
 
-if choice == "1": #add
-    Add.buy()
-elif choice == "2": #view
-    view.view_tickets()
-elif choice == "3": #update
-    print()
-else:
-    print("Input only numbers [1]-[3]")
+if __name__ == "__main__":
+    main()
 # view()
 # add()
 # update()
