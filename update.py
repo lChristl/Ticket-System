@@ -62,6 +62,12 @@ def modify_booking():
         else:
             print("Quantity must be greater than 0.")
 
+    elif option == "3": #delete ticket
+        del BOOKINGS[ticket_id]
+        print(f"Booking {ticket_id} has been canceled.")
+
+    else:
+        print("Invalid option!")
 
 modify_booking()
     
