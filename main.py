@@ -1,5 +1,5 @@
 import Add
-#import view
+import view
 #import update
 
 print("Ticket System")
@@ -15,12 +15,11 @@ choice = input()
 if choice == "1": #add
     Add.buy()
 elif choice == "2": #view
-    print()
+    view.view_tickets()
 elif choice == "3": #update
     print()
 else:
     print("Input only numbers [1]-[3]")
-
 # view()
 # add()
 # update()
