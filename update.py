@@ -46,6 +46,3 @@ def modify_booking():
 
     else:
         print("Invalid option!")
-
-# modify_booking()
-    
