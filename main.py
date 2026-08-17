@@ -1,6 +1,6 @@
 import Add
 import view
-#import update
+import update
 
 def main():
     while True:
@@ -17,7 +17,7 @@ def main():
         elif choice == "2": #view
             view.view_tickets()
         elif choice == "3": #update
-            print()
+            update.modify_booking()
         elif choice == "4": #exit
             print("Exiting program..")
             break
