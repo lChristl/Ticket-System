@@ -1,4 +1,3 @@
-
 movies = {
     "1":{
     "title":"Spider-Man: Brand New Day",

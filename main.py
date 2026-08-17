@@ -1,6 +1,7 @@
 import Add
 import view
 import update
+from data import BOOKINGS
 
 def main():
     while True:
@@ -26,6 +27,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# view()
-# add()
-# update()
