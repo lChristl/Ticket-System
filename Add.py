@@ -32,7 +32,7 @@ def buy():
     quantity = int(input("Number of Ticket: "))
     total = selected_movie["price"] * quantity
 
-    ticket_id= (f"Ticket{len(BOOKINGS) + 1}")
+    ticket_id= str(len(BOOKINGS) + 1)
     BOOKINGS[ticket_id] = {
         "movie": selected_movie["title"],
         "price": selected_movie["price"],
