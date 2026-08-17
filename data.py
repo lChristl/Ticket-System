@@ -32,22 +32,22 @@ movies = {
 tickets = []
 
 BOOKINGS = {
-    "1":{
-        "title":"Testing movie 1",
-        "price":100,
-        "time":"12:00PM",
-        "quantity":"2",
-        "total": 200,
-        "times_available": ("1:10PM","5:10PM","7:10PM")
-    },
+    # "1":{
+    #     "title":"Testing movie 1",
+    #     "price":100,
+    #     "time":"12:00PM",
+    #     "quantity":"2",
+    #     "total": 200,
+    #     "times_available": ("1:10PM","5:10PM","7:10PM")
+    # },
 
-    "2":{
-            "title":"Testing movie 2",
-            "price":100,
-            "time":"12:00PM",
-            "quantity":"2",
-            "total": 200,
-            "times_available": ("1:10PM","5:10PM","7:10PM")
-        }
+    # "2":{
+    #         "title":"Testing movie 2",
+    #         "price":100,
+    #         "time":"12:00PM",
+    #         "quantity":"2",
+    #         "total": 200,
+    #         "times_available": ("1:10PM","5:10PM","7:10PM")
+    #     }
 
             }
