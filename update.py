@@ -12,7 +12,6 @@ def modify_booking():
         return
 
     booking = BOOKINGS[ticket_id]
-    # FIXED: Single quotes used & changed 'title' to 'movie'
     print(f"Current Booking: {booking['movie']} | Showtime: {booking['showtime']}")
     print("1. Change Showtime")
     print("2. Change Ticket Quantity")
